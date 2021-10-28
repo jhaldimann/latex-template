@@ -23,6 +23,7 @@
 
 \include{chapters/glossary}
 
+%================= Define margin on every side ===========================%
 \usepackage{geometry}
  \geometry{
  a4paper,
@@ -33,6 +34,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 
+%================= Define how a hyperlink will be displayed =============%
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -41,6 +43,7 @@
     urlcolor=black,
 }
 
+%=================== Define the folder where picutres are stored ========%
 \graphicspath{ {pictures/} }
 
 \usepackage[pagestyles]{titlesec}
@@ -71,21 +74,21 @@
 \counterwithout{table}{chapter}
 
 \begin{document}
-    %============= Create title page ================= 
+    %============= Create title page =================% 
     \maketitle
-    %============= Add abstract section ==============
+    %============= Add abstract section ==============%
     \chapter{Abstract}
     \input{chapters/0_Abstract.tex}
-    %============= Add table of contents =============
+    %============= Add table of contents =============%
     \tableofcontents
-    %============= Define the pagenumbering ==========
+    %============= Define the pagenumbering ==========%
     \pagenumbering{arabic}
-    %============= Add chapters for content ==========
+    %============= Add chapters for content ==========%
     %\input{chapters/my_chapter.tex}
 	
-    %============= Generate list of tables ===========
+    %============= Generate list of tables ===========%
     \listoftables
-    %============= Generate list of figures ==========
+    %============= Generate list of figures ==========%
     \listoffigures
     
 \end{document}
